@@ -2,7 +2,9 @@
 import './style.css'
 // import './bases/01-const-let'
 // import './bases/02-template-string'
-import './bases/03-literal-objects'
+// import './bases/03-object-literal'
+// import './bases/04-interfaces'
+import './bases/05-arrays'
 
 // What's inside the text is a template literal, we're goint to see it later on
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
