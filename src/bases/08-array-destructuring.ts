@@ -22,6 +22,8 @@ const [letters, numbers] = returnsArrayFn();
 // Like this, JS will execute it but TS says 'it's not type safe'
 // console.log(letters + 100);
 
+console.log([letters, numbers]);
+
 // CHALLENGE 'Implementar useState'
 /*
 Crea una función llamada useState. Debe cumplir con los siguientes requisitos:
