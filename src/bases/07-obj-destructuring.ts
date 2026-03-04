@@ -9,7 +9,7 @@ const person = {
 // const age = person.age;
 // const key = person.key;
 
-// But we can use the desestructuring to improve the reading
+// But we can use the destructuring to improve the reading
 const {name: namePerson, age: agePerson, key: keyPerson} = person;
 
 console.log({namePerson, agePerson, keyPerson});
@@ -22,7 +22,7 @@ interface Hero {
 }
 
 const useContext = ({name, age, key, rank = 'sin rango'}: Hero) => { // We can set a default value to optional parameters with 'parameter? = value'
-    // We can use the 'traditional' desestructuring if there is more than 3-4 properties to improve reading, using (hero: Hero)
+    // We can use the 'traditional' destructuring if there is more than 3-4 properties to improve reading, using (hero: Hero)
     // const {name, age, key, rank} = hero;
 
     // We con assign the parameter to a property: (name: name). Or only refer to the parameter like this:
@@ -41,9 +41,9 @@ const context = useContext(person);
 
 console.log(context);
 
-// TO DO: desestructurate using the function useContext
+// TO DO: destructurate using the function useContext
 const {key, user, rank} = useContext(person);
-// If we have properties inside properties, is recommended to desestructure on another variable after the first desestructuring
+// If we have properties inside properties, is recommended to destructure on another variable after the first destructuring
 const {name} = user;
 
 console.log({key, name, rank});
