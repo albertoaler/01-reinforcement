@@ -1,4 +1,4 @@
-interface Hero {
+export interface Hero {
     id: number,
     name: string,
     owner: Owner
@@ -6,14 +6,15 @@ interface Hero {
 
 // We can use types to put a restriction to our code of which values we can use
 // This not transpiles to JS, is only used by TS
-type Owner = 'DC' | 'Marvel';
+export type Owner = 'DC' | 'Marvel';
 
 // Enums does exists on JS, so it will generate them and use memory
 // But with modern TS, this will lead to an error
 // https://www.totaltypescript.com/erasable-syntax-only
 // enum Owner {DC = 'DC', Marvel = 'Marvel'};
 
-const heroes: Hero[] = [
+// This is called a named export
+export const heroes: Hero[] = [
   {
     id: 1,
     name: 'Batman',
@@ -40,3 +41,6 @@ const heroes: Hero[] = [
     owner: 'Marvel',
   },
 ];
+
+// And this is called a default export
+export default heroes;
