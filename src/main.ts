@@ -9,7 +9,9 @@ import './style.css'
 // import './bases/07-obj-destructuring'
 // import './bases/08-array-destructuring'
 
-import {getHeroesByOwner} from './bases/09-imp-exp'
+// import {getHeroesByOwner} from './bases/09-imp-exp'
+
+import './bases/10-promises'
 
 // What's inside the text is a template literal, we're goint to see it later on
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -17,4 +19,4 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
      <h1>Hola Mundo!</h1>
   </div>
 `
-console.log(getHeroesByOwner('Marvel'));
+// console.log(getHeroesByOwner('Marvel'));
