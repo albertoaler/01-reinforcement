@@ -12,7 +12,8 @@ import './style.css'
 // import {getHeroesByOwner} from './bases/09-imp-exp'
 
 // import './bases/10-promises'
-import './bases/11-fetch-api'
+// import './bases/11-fetch-api'
+import './bases/12-async-await'
 
 // What's inside the text is a template literal, we're goint to see it later on
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
